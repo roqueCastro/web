@@ -1,0 +1,142 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.web.fragment.ConsultaUFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="Consultar usuario"
+                />
+
+            <!--  Label -->
+            <Spinner
+                android:id="@+id/spinnerC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_marginTop="8dp">
+            </Spinner>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="Documento:"/>
+                <TextView
+                    android:id="@+id/textDocumento"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:text="Vacio"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="Nombre:"/>
+                <TextView
+                    android:id="@+id/textNombre"
+                    android:layout_width="0dp"
+                    android:textSize="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Vacio"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="Profesion:"/>
+                <TextView
+                    android:id="@+id/textProfesion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:layout_weight="1"
+                    android:text="Vacio"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_consultar_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:padding="12dp"
+            android:text="Consultar" />
+
+        <ImageView
+            android:id="@+id/imagenId"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_margin="15dp"
+            android:layout_below="@+id/linearLayout"
+            android:src="@drawable/img_no_disponible"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
